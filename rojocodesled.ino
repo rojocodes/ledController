@@ -257,7 +257,7 @@ void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t lenght
 
         Serial.printf("red [%u] ", r);
         Serial.printf("green [%u] ", g);
-        Serial.printf("blue [%u] ", bw);
+        Serial.printf("blue [%u] ", b);
         setColor(r,g,b);
       } else if (payload[0] == 'R') {                      // the browser sends an R when the rainbow effect is enabled
         rainbow = true;
